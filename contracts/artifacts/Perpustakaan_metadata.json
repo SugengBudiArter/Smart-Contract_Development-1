@@ -1,0 +1,266 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "BukuDiHapus",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahunDibuat",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "BukuDiUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahunDibuat",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "BukuDitambahkan",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bukuByISBN",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahunDibuat",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "getDataBukuByISBN",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "hapusBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahunDibuat",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "tambahBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahunDibuat",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "updateBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Perpustakaan.sol": "Perpustakaan"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Perpustakaan.sol": {
+			"keccak256": "0xfad319414a40379981f84759cf0144556af3ce5a23f689b4b64b5f7eb23cf398",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://571a3702b5296abb5b86c721e38f6a0d03269a05d1f5ce11b60aea73f352dda6",
+				"dweb:/ipfs/QmZNTETsoob17bLLZGpgMmdCkToSgMshch4Udx1VECK4kJ"
+			]
+		}
+	},
+	"version": 1
+}
