@@ -1,2 +1,2 @@
-Nama : Sugeng Dwu Budi P.
+Nama : Sugeng Dwi Budi P.
 Kelompok : 1 - BlockChain
